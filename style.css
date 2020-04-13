@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+nav{
+    width:100%;
+    position:fixed;
+}
+nav ul{
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 200px 20px 0px;
+}
+nav ul li{
+    display: inline-block;
+    font-family: "Nanum gothic";
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+nav ul li a{
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 900;
+    transition: .3s;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.nav-active{
+    border: 1px solid #fff;
+}
+
+@media(max-width:1100px){
+    nav ul{
+        justify-content: center;
+        padding: 20px 0px;
+    }
+}
+
+/* ####### Banner ###### */
+
+.banner{
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    overflow: hidden;
+    align-items: center;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/elon-musk.jpg);
+    width: 100vw;
+}
+
+.banner img{
+    width: 600px;
+    padding: 20% 1% 20% 2%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    align-items: center;
+    top: 0;
+
+    
+}
+.banner p{
+    font-size: 25px;
+    max-width: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media (max-width: 800px){
+    .banner img{
+        width: 400px;
+    }
+    .banner p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .banner img{
+        width: 250px;
+    }
+    .banner p{
+        font-size: 12px;
+    }
+}
+
+/* ##########   Articles    ######### */
+
+.articles{
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 20% 50px 20%;
+}
+
+.articles section a{
+    margin: 0px 10px 10px 0px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px 0px rgba(255, 255, 255, 0.445);
+}
+
+.articles section a article{
+    color: #eee;
+
+}
+.articles section a  img{
+    min-width: 300px;
+}
+
+.articles aside {
+    display: none;
+    display: flex;
+    flex-direction: column; 
+}
+
+.articles aside h4{
+    color: white;
+    padding: 10px;
+}
+
+.articles aside a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    padding-left: 10px;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(255, 255, 255, 0.445);
+}
+
+
+/*     FOOTER     */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #999;
+    background-color: black;
+    padding: 2% 10% 10% 10%;
+    
+}
+.colum-f{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column ;
+    background-color: black;
+    width:355px;
+}
+.colum-f h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.colum-f a{
+    padding-bottom: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #999;
+}
+
+.colum-f a:hover{
+    color: white;
+}
+
+
+
